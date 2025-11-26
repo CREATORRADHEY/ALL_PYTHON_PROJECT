@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyansh Dusad | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Divyansh.dev</div>
+            <nav>
+                <a href="{{ url_for('home') }}" class="active">Home</a>
+                <a href="{{ url_for('resume') }}">Resume</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Building the Future with <br> <span style="color: var(--primary)">AI & Python</span></h1>
+                <p class="subtitle">I'm Divyansh Dusad, a passionate developer crafting intelligent solutions and
+                    automating the mundane. Let's build something amazing together.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="card">
+                    <p>Hello! I'm a developer with a deep love for Artificial Intelligence and Python. My journey
+                        involves exploring the depths of machine learning, building robust web applications with Flask,
+                        and creating automation scripts that save time and effort. I believe in clean code and
+                        user-centric design.</p>
+                    <br>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Web Development</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="grid">
+                    <!-- Project 1 -->
+                    <div class="card">
+                        <i class="fas fa-robot card-icon"></i>
+                        <h3>AI Chatbot</h3>
+                        <p>A smart conversational agent built with Python and NLP libraries capable of understanding
+                            context and answering queries.</p>
+                        <a href="#" class="btn btn-outline" style="font-size: 0.9rem;">View Code <i
+                                class="fab fa-github"></i></a>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="card">
+                        <i class="fas fa-laptop-code card-icon"></i>
+                        <h3>Portfolio Website</h3>
+                        <p>This very website! A responsive, modern portfolio built with Flask and custom CSS to showcase
+                            my work.</p>
+                        <a href="#" class="btn btn-outline" style="font-size: 0.9rem;">View Code <i
+                                class="fab fa-github"></i></a>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="card">
+                        <i class="fas fa-cogs card-icon"></i>
+                        <h3>Task Automation</h3>
+                        <p>A suite of Python scripts designed to automate repetitive daily tasks, increasing
+                            productivity by 40%.</p>
+                        <a href="#" class="btn btn-outline" style="font-size: 0.9rem;">View Code <i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="card"
+                    style="text-align: center; background: linear-gradient(to right, var(--primary), var(--secondary)); color: white;">
+                    <h2 style="color: white;">Let's Work Together</h2>
+                    <p style="color: rgba(255,255,255,0.9);">Have a project in mind or just want to say hi? I'd love to
+                        hear from you.</p>
+                    <a href="mailto:email@example.com" class="btn"
+                        style="background: white; color: var(--primary); margin-top: 1rem;">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2025 Divyansh Dusad. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
